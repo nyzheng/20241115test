@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dino.css') }}" />
+
+        <title></title>
+    </head>
+
+    <body>
+        <div id="start">
+            <button onclick="start()">start</button>
+        </div>
+        <div class="container">
+            <div id="background">
+                <div id="over">Game Over</div>
+                <div id="score"></div>
+                <div id="dino">
+                    <img width="40" height="50" src="{{ url_for('static', filename='images/dino.gif') }}" alt="" />
+                </div>
+            </div>
+        </div>
+        <button id="restart" onclick="restartGame()">Restart</button>
+    </body>
+    <script src="{{ url_for('static', filename='js/dino.js') }}"></script>
+</html>

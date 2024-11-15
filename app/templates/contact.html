@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>個人資訊</title>
+    </head>
+    <body>
+        <h1>你好, {{ name }}!</h1>
+        <p>年齡: {{ age }}</p>
+        <p>性別: {{ gender }}</p>
+        <p>身高: {{ height }} cm</p>
+
+        <form method="POST">
+            <label for="name">輸入新名字：</label>
+            <input type="text" id="name" name="name" placeholder="請輸入名字" /><br /><br />
+
+            <label for="age">輸入年齡：</label>
+            <input type="text" id="age" name="age" placeholder="請輸入年齡" /><br /><br />
+
+            <label for="gender">選擇性別：</label>
+            <select id="gender" name="gender">
+                <option value="未知">未知</option>
+                <option value="男性">男性</option>
+                <option value="女性">女性</option>
+                <option value="其他">其他</option></select
+            ><br /><br />
+
+            <label for="height">輸入身高 (cm)：</label>
+            <input type="text" id="height" name="height" placeholder="請輸入身高" /><br /><br />
+
+            <button type="submit">更新資訊</button>
+        </form>
+    </body>
+</html>
